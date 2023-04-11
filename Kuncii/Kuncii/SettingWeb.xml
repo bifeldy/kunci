@@ -1,0 +1,14 @@
+﻿<SettingConfig>
+    <UserOrcl>dcg001</UserOrcl>
+    <PasswordOrcl>dcg001sim</PasswordOrcl>
+    <ODPOrcl>(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.46.53)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=dbg001sim)))</ODPOrcl>
+    <IPSql>172.20.16.22</IPSql>
+    <UserSql>sa</UserSql>
+    <PasswordSql>Int3l@1dm</PasswordSql>
+    <DatabaseSql>dpd</DatabaseSql>
+    <IPPostgres>172.24.16.174</IPPostgres>
+    <PortPostgres>5503</PortPostgres>
+    <UserPostgres>dcg256</UserPostgres>
+    <PasswordPostgres>2023G256</PasswordPostgres>
+    <DatabasePostgres>sim_g256</DatabasePostgres>
+</SettingConfig>

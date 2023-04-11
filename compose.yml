@@ -1,0 +1,30 @@
+version: "3.9"
+
+name: kunci
+
+services:
+
+  # kunci-dcgxxx-1
+
+  dcgsim:
+    image: 172.24.16.251:5000/bifeldy/kunci-nc-21:latest
+    restart: unless-stopped
+    # ports:
+    #   - 80:80
+    environment:
+      KNOWN_PROXY: 10.0.0.100
+    volumes:
+      - ./kunci/SettingWeb-GSIM.xml:/app/SettingWeb.xml
+    networks:
+      - bifeldy-net-global
+      # - bifeldy-net-kunci-sim
+
+networks:
+
+  bifeldy-net-global:
+    name: bifeldy-net-global
+    external: true
+
+  # bifeldy-net-kunci-sim:
+  #   name: bifeldy-net-kunci-sim
+  #   external: true
